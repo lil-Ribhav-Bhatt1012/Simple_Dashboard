@@ -43,14 +43,3 @@ Contributions are what make the open-source community such an amazing place to l
 
 ## License
 Distributed under the MIT License. See `LICENSE` for more information.
-
-## Contact
-Your Name - [your-email@example.com](mailto:your-email@example.com)
-
-Project Link: [https://github.com/[your-username]/[repository-name]](https://github.com/[your-username]/[repository-name])
-
-## Acknowledgements
-- [List any other resources or libraries used in the project]
-```
-
-Remember to replace `[your-username]`, `[repository-name]`, and other placeholder text with your specific project details. This template covers the essential sections for a README, but feel free to customize it according to your project's needs.
