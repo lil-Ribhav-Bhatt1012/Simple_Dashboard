@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoring Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="dashboard">
+        <aside class="sidebar">
+            <div class="logo">LOGO HERE</div>
+            <nav class="menu">
+                <ul>
+                    <li>Overview</li>
+                    <li>Onboarding</li>
+                    <li class="active">Monitoring</li>
+                    <li>Flagging</li>
+                    <li>Source of Income</li>
+                    <li>UAR</li>
+                </ul>
+            </nav>
+        </aside>
+        <main class="main-content">
+            <header class="header">
+                <h1>Monitoring</h1>
+                <div class="search-filter">
+                    <input type="text" id="searchBox" placeholder="Search...">
+                    <select id="triggerReason">
+                        <option value="all">Trigger Reason</option>
+                        <option value="ipChange">IP Change</option>
+                        <option value="payment">Payment Issue</option>
+                    </select>
+                    <select id="riskLevel">
+                        <option value="all">Risk Level</option>
+                        <option value="high">High</option>
+                        <option value="medium">Medium</option>
+                        <option value="low">Low</option>
+                    </select>
+                </div>
+            </header>
+            <section class="tabs">
+                <button class="tablink active" onclick="openTab(event, 'Pending')">Pending</button>
+                <button class="tablink" onclick="openTab(event, 'Completed')">Completed</button>
+            </section>
+            <section id="Pending" class="tabcontent">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>User</th>
+                            <th>Risk Level</th>
+                            <th>Trigger Reason</th>
+                            <th>In Queue For</th>
+                            <th>Date Added On</th>
+                            <th>Previously Reviewed</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>John Doe</td>
+                            <td>Medium</td>
+                            <td>IP Change</td>
+                            <td>4 days</td>
+                            <td>12 Oct, 2023</td>
+                            <td>Yes</td>
+                        </tr>
+                        
+                    </tbody>
+                </table>
+            </section>
+            <section id="Completed" class="tabcontent" style="display: none;">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>User</th>
+                            <th>Risk Level</th>
+                            <th>Action Reason</th>
+                            <th>Time to Close</th>
+                            <th>Date Added On</th>
+                            <th>Action Taken By</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Jane Smith</td>
+                            <td>Low</td>
+                            <td>Verified</td>
+                            <td>2 days</td>
+                            <td>10 Oct, 2023</td>
+                            <td>Alice</td>
+                        </tr>
+                        <!-- Repeat for more rows as needed -->
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
